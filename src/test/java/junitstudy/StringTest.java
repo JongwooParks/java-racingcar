@@ -33,13 +33,26 @@ public class StringTest {
     @Test
     @DisplayName("length 소괄호 제거")
     public void subString_length_소괄호제거(){
+//        //given
+//        String input = "(1,2)";
+//        //when
+//        String result = input.substring(1,input.length()-1);
+//        //then
+//       assertThat(result).isEqualTo("1,2");
+
+        // 띄어쓰기는 가독성에 있어서 중요합니다. 위의 코드와 아래 코드를 비교해 주세요.
+
         //given
         String input = "(1,2)";
+
         //when
-        String result = input.substring(1,input.length()-1);
+        String result = input.substring(1, input.length() - 1);
+
         //then
-       assertThat(result).isEqualTo("1,2");
+        assertThat(result).isEqualTo("1,2");
     }
+
+    // 아래 코드도 위 코드처럼 띄어쓰기 한번 해보세요.
     @Test
     @DisplayName("index 소괄호 제거")
     public void subString_index_소괄호제거(){
@@ -50,6 +63,8 @@ public class StringTest {
         //then
        assertThat(result).isEqualTo("1,2");
     }
+
+    // given, when, then이 안되어있네요.
     @Test
     @DisplayName("charAt 특정 위치 문자 반환")
     public void charAt_특정위치_문자_반환() {
